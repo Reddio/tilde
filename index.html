@@ -6,43 +6,40 @@
     // the category, name, key, url, search path and color for your commands
     // if none of the specified keys are matched, the '*' key is used
     commands: [
-                [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', '#111'],
-                ['Work',        'GitHub',           'gh',       'https://github.com',                   '/search?q={}',                         '#333'],
-                ['Work',        'StackOverflow',    'so',       'https://goo.gl/qvPTQ3',                false,                                  '#f48024'],
-                ['Work',        'HackerNews',       'hn',       'https://goo.gl/3SmLY',                 false,                                  '#ff6600'],
-                ['Work',        'TechCrunch',       'tc',       'https://techcrunch.com',               false,                                  '#0A9E01'],
-                ['Work',        'Pluralsight',      'ps',       'https://pluralsight.com',              false,                                  '#EC5FB0'],
-                ['Work',        'Reddit',           'r',        'https://www.reddit.com',               '/search?q={}',                         '#ff4500'],
+                [null,          'Google',           '*',        'https://encrypted.google.com',         '/search?q={}',                        '#111'],
 
-                ['School',      'McNeese',          'mc',       'https://mymcneese.mcneese.edu',        false,                                  '#FFD204'],
-                ['School',      'Duolingo',         'dl',       'https://duolingo.com',                 false,                                  '#7ac70c'],
-                ['School',      'KhanAcademy',      'ka',       'http://khanacademy.com',               false,                                  '#9cb443'],
-                ['School',      'Facebook',         'f',        'https://www.facebook.com',             '/search/top/?q={}',                    '#3b5998'],
+                ['Work',        'GitHub',           'g',       'https://github.com',                   '/search?q={}',                         '#333'],
+                ['Work',        'HackerNews',       'h',       'https://goo.gl/3SmLY',                 false,                                  '#ff6600'],
+                ['Work',        'TechCrunch',       'c',       'https://techcrunch.com',               false,                                  '#0A9E01'],
+                ['Work',        'Pluralsight',      'p',       'https://pluralsight.com',              false,                                  '#EC5FB0'],
 
-                ['Money',       'Simple',           'S',        'https://simple.com',                   false,                                  '#3495F4'],
-                ['Money',       'Ally',             'A',        'https://ally.com',                     false,                                  '#445E97'],
-                ['Money',       'Mint',             'M',        'https://mint.com',                     false,                                  '#7AEF44'],
-                ['Money',       'CreditKarma',      'C',        'https://creditkarma.com',              false,                                  '#3DDB93'],
+                ['School',      'McNeese',          'm',       'https://mymcneese.mcneese.edu',        false,                                  '#FFD204'],
+                ['School',      'Duolingo',         'd',       'https://duolingo.com',                 false,                                  '#7ac70c'],
+                ['School',      'KhanAcademy',      'k',       'http://khanacademy.com',               false,                                  '#9cb443'],
+                ['School',      'MentalFloss',      's',       'https://mentalfloss.com',              false,                                  '#F16957'],
 
-                ['Watch',       'Netflix',          'n',        'https://www.netflix.com',              '/search?q={}',                         '#e50914'],
-                ['Watch',       'Twitch',           'tw',       'https://goo.gl/jdLyBj',                null,                                   '#6441a5'],
-                ['Watch',       'YouTube',          'yt',       'https://goo.gl/LvNQoD',                '/results?search_query={}',             '#CD201F'],
-                ['Watch',       'Livecoding',       'lc',       'https://liveedu.tv/',                  null,                                   '#22282E'],
-                ['Watch',        'Tumblr',           't',        'https://tumblr.com',                   false,                                  '#35465c'],
+                ['Watch',       'Netflix',          'n',       'https://www.netflix.com',              '/search?q={}',                         '#e50914'],
+                ['Watch',       'Twitch',           'w',       'https://goo.gl/jdLyBj',                null,                                   '#6441a5'],
+                ['Watch',       'YouTube',          'y',       'https://goo.gl/LvNQoD',                '/results?search_query={}',             '#CD201F'],
+                ['Watch',       'Livecoding',       'l',       'https://liveedu.tv/',                  null,                                   '#22282E'],
 
-                ['Listen',      'Hypem',            'h',        'https://hypem.com/popular',            '/search/{}',                           '#83c441'],
-                ['Listen',      'Line Radio',       'l',        'https://linerad.io',                   '/#{}',                                 '#39CCCC'],
-                ['Listen',      'SoundCloud',       'sc',       'https://soundcloud.com/discover',      '/search?q={}',                         '#ff8800'],
-                ['Listen',      'Ambient',          'amb',      'asoftmurmur.com/',                     false,                                  '#1C252C'],
-                ['Listen',      'Bandcamp',         'bc',       'https://bandcamp.com/',                false,                                  '#639AA9'],
+                ['Listen',      'Hypem',            'e',       'https://hypem.com/popular',            '/search/{}',                           '#83c441'],
+                ['Listen',      'Line Radio',       'l',       'https://linerad.io',                   '/#{}',                                 '#39CCCC'],
+                ['Listen',      'SoundCloud',       's',       'https://soundcloud.com/discover',      '/search?q={}',                         '#ff8800'],
+                ['Listen',      'Ambient',          'a',       'asoftmurmur.com/',                     false,                                  '#1C252C'],
+                ['Listen',      'Bandcamp',         'b',       'https://bandcamp.com/',                false,                                  '#639AA9'],
                 
-                ['Feed',        'NPR',              'npr',      'http://npr.org',                       '/search/index.php?searchinput={}',     '#F15C22'],
-                ['Feed',        'The Verge',        'tv',       'https://theverge.com',                 '/search?q={}',                         '#EC008C'],
-                ['Feed',        'Vox',              'v',        'https://vox.com',                      '/search?q={}',                         '#FFF200'],
-                ['Feed',        'Mashable',         'ma',       'http://mashable.com',                  '/search/?utf8=✓&q={}',                 '#00AEEF'],
-                ['Feed',        'MentalFloss',      'mf',       'https://mentalfloss.com',              false,                                  '#F16957'],
-                ['Feed',        'Damn Interest', 'di',       'https://damninteresting.com',          false,                                  '#E1E31A'],
-                ['Feed',        'Art of Man',       'aom',      'http://artofmanliness.com',            '/?s={}',                               '#87240F'],
+                ['Feed',        'NPR',              '1',       'http://npr.org',                       '/search/index.php?searchinput={}',     '#F15C22'],
+                ['Feed',        'The Verge',        'v',       'https://theverge.com',                 '/search?q={}',                         '#EC008C'],
+                ['Feed',        'Vox',              'x',       'https://vox.com',                      '/search?q={}',                         '#FFF200'],
+                ['Feed',        'Mashable',         'b',       'http://mashable.com',                  '/search/?utf8=✓&q={}',                 '#00AEEF'],
+                ['Feed',        'Damn Interest',    'i',       'https://damninteresting.com',          false,                                  '#E1E31A'],
+                ['Feed',        'Art of Man',       'a',       'http://artofmanliness.com',            '/?s={}',                               '#87240F'],
+
+                ['Lurk',        'Reddit',           'r',       'https://www.reddit.com',               '/search?q={}',                         '#ff4500'],
+                ['Lurk',        'Facebook',         'f',       'https://www.facebook.com',             '/search/top/?q={}',                    '#3b5998'],
+                ['Lurk',        'Tumblr',           't',       'https://tumblr.com',                   false,                                  '#35465c'],
+
             ],
 
     // give suggestions as you type
@@ -74,10 +71,14 @@
     instantRedirect: false,
 
     // open queries in a new tab
-    newTab: false,
+    newTab: true,
 
     // dynamic background colors when command domains are matched
-    colors: true,
+    colors: false,
+
+    // specify a theme file
+    // remove or set to false to use the hardcoded theme
+    theme: 'file:///home/cade/.cache/wal/colors.css',
 
     // the delimiter between the key and your search query
     // e.g. to search GitHub for potatoes you'd type "g:potatoes"
@@ -106,6 +107,11 @@
 <style type="text/css">
   @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
+  :root {
+    --color0: #111;
+    --color15: #fff;
+  }
+
   body {
     position: absolute;
     top: 0;
@@ -114,9 +120,10 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    transition: background .2s;
+    transition: background-color .2s;
+    background-color: var(--color0);
     font-family: Lato, sans-serif;
-    color: #222;
+    color: var(--color15);
   }
 
   input,
@@ -129,8 +136,8 @@
     margin: 0;
     border: 0;
     outline: 0;
-    background: transparent;
-    color: #fff;
+    background-color: transparent;
+    color: var(--color15);
     font-family: Lato, sans-serif;
     text-align: center;
     -webkit-appearance: none;
@@ -160,7 +167,7 @@
 
   #search-form {
     padding: 1em;
-    background: #111;
+    background-color: var(--color0);
     transition: background-color .5s;
     box-sizing: border-box;
     z-index: 2;
@@ -177,6 +184,7 @@
     font-size: 1.5em;
     font-weight: 900;
     letter-spacing: .05em;
+    text-transform: uppercase;
   }
 
   #search-suggestions {
@@ -197,8 +205,8 @@
   }
 
   .search-suggestion.highlight {
-    background-color: #fff;
-    color: #222;
+    background-color: var(--color15);
+    color: var(--color0);
   }
 
   .search-suggestion b {
@@ -213,7 +221,7 @@
     right: 0;
     left: 0;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--color15);
     opacity: .8;
   }
 
@@ -224,7 +232,7 @@
   #help {
     display: block;
     padding: 8vw;
-    background: #fff;
+    background-color: var(--color0);
     font-size: 1.3rem;
     z-index: 1;
   }
@@ -263,8 +271,8 @@
     width: 2.5em;
     margin-right: 1em;
     border-radius: 50%;
-    background-color: #222;
-    color: #fff;
+    background-color: var(--color15);
+    color: var(--color0);
     font-size: .8em;
     text-align: center;
   }
@@ -283,7 +291,7 @@
     height: 2px;
     transition: .2s;
     transform: translateX(-2em);
-    background-color: #222;
+    background: var(--color15);
     opacity: 0;
   }
 
@@ -1054,4 +1062,12 @@
     delimiter: CONFIG.clockDelimiter,
     form: getForm(),
   });
+
+  if (CONFIG.theme) {
+    const link = document.createElement('link');
+    link.href = CONFIG.theme;
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    $.el('head').appendChild(link);
+  }
 </script>
